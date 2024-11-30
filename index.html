@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Youtube to MP3 converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="credits">Created by Runald</div>
+      <h1>Youtube to MP3</h1>
+      <form id="ytform">
+        <label for="ytlink">Youtube Link:</label>
+        <input
+          type="text"
+          id="ytlink"
+          name="ytlink"
+          placeholder="just paste the youtube link here"
+          required
+        />
+        <button type="submit" id="sendButton">Convert</button>
+      </form>
+
+      <div id="loading" style="display: none">Converting....</div>
+      <div class="button-container">
+        <button id="infoButton" aria-label="Information">Information</button>
+      </div>
+    </div>
+
+    <!-- Information Modal -->
+    <div id="infoModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">Easy CORS Setup</div>
+        <div class="modal-body">
+          To use NGLx, you need to install
+          <strong
+            ><a
+              href="https://chrome.google.com/webstore/detail/easy-cors/gcdaaelgdlicnnichhholnoagafangej"
+              target="_blank"
+              rel="noopener"
+              style="color: red"
+              >EASY CORS</a
+            ></strong
+          >
+          extension and enable it in your browser. <br /><br />
+          <strong>Steps to Approve Domain:</strong>
+          <br /><br />
+          1. Click on the Easy CORS extension icon in your Chrome toolbar.<br />
+          2. Go to the "Options" or "Settings" page.<br />
+          3. Add <strong>ngl.link</strong> to the list of allowed domains.<br />
+          4. Save the settings and refresh the page.<br /><br />
+          <strong>Disclaimer:</strong>
+          <p>
+            This tool is intended for educational purposes only. The creator is
+            not responsible for any misuse or consequences.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button id="closeModal">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
