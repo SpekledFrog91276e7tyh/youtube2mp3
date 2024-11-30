@@ -5,7 +5,7 @@ document.getElementById("ytform").addEventListener("submit", function (event) {
   loadingDiv.style.display = "block";
 
   fetch(
-    `https://tesfgaydgsa.vercel.app//download-audio?url=${encodeURIComponent(url)}`,
+    `https://tesfgaydgsa.vercel.app/download-audio?url=${encodeURIComponent(url)}`,
   )
     .then((response) => {
       if (response.ok) {
